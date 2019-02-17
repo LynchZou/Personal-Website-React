@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+
+.index {
+  height: 93vh;
+  padding-top: 30vh;
+  background: url("../../src/images/bg-2.jpg") whitesmoke;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+
+.intro {
+  height: 200px;
+
+  .change-intro {
+    border-bottom: 1px solid black;
+    font-size: 5vw;
+    font-family: "Raleway", sans-serif;
+
+    .cursor {
+      font-family: "Open Sans Condensed", sans-serif;
+      font-weight: 100;
+    }
+  }
+
+  .sub-intro {
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+  }
+}
+
+@media (max-width: 1024px) {
+  .index {
+    background: url("../../src/images/bg-row-2.jpg") whitesmoke;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
+
+  .intro {
+    .change-intro {
+      font-size: 4rem;
+    }
+    .sub-intro {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .intro {
+    .change-intro {
+      font-size: 2rem;
+    }
+    .sub-intro {
+      font-size: 1rem;
+    }
+  }
+}

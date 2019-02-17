@@ -1,0 +1,22 @@
+@import "./partials/navbar";
+@import "./partials/sidebar";
+@import "./partials/index";
+@import "./partials/profile";
+@import "./partials/experience";
+@import "./partials/skills";
+@import "./partials/projects";
+@import "./partials/contact";
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+footer {
+  font-family: "Rajdhani", sans-serif;
+  padding-top: 20vh;
+  background: whitesmoke;
+  padding-bottom: 20px;
+}

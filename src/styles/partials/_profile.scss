@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css?family=Rajdhani");
+
+.profile {
+  background: whitesmoke;
+  padding-top: 15vh;
+  min-height: 100vh;
+
+  .profile-content {
+    .profile-text {
+      width: 60%;
+      box-sizing: border-box;
+      padding: 0 7%;
+      float: left;
+      font-family: "Rajdhani", sans-serif;
+      line-height: 25px;
+    }
+
+    .profile-img {
+      width: 40%;
+      box-sizing: border-box;
+      float: left;
+
+      img {
+        width: 75%;
+      }
+    }
+
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+@media (max-width: 1024px) {
+  .profile {
+    .profile-content {
+      .profile-text {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .sidebar-appear {
+    width: 60%;
+    transform: translate(0, 0);
+  }
+
+  .profile {
+    .profile-content {
+      .profile-text {
+        width: 100%;
+      }
+
+      .profile-img {
+        width: 150%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

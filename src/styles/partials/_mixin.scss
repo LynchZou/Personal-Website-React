@@ -1,0 +1,13 @@
+/* colors */
+$transparent-black: rgba(27, 25, 25, 0.9);
+$dark-white: rgba(231, 216, 216, 0.7);
+$pale: palevioletred;
+$light-yellow: rgb(248, 248, 120);
+$cardinal: rgb(204, 36, 72);
+$medium-yellow: rgb(228, 228, 7);
+$light-green: rgb(57, 219, 57);
+
+/* overwrite headroom */
+.headroom--unpinned {
+  transition: none !important;
+}
