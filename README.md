@@ -1,4 +1,4 @@
-# Lynch's Personal Website - React version
+# Lynch's Personal Website - React version [![Netlify Status](https://api.netlify.com/api/v1/badges/bd31c1d9-582c-4dc4-b3c6-c3591ce87140/deploy-status)](https://app.netlify.com/sites/xuyangzou0114/deploys)
 
 This project is the React version of Lynch (Xuyang)'s personal website. It is completely different from the previous version in coding part. No code is reused and everything is built from scratch. It uses React with Redux.
 
