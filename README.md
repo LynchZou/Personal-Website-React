@@ -1,68 +1,86 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Lynch's Personal Website - React version
 
-## Available Scripts
+This project is the React version of Lynch (Xuyang)'s personal website. It is completely different from the previous version in coding part. No code is reused and everything is built from scratch. It uses React with Redux.
 
-In the project directory, you can run:
+## Preparation
 
-### `npm start`
+Lynch's Personal Website - React version (LPWR) requires predefined `.env` file to start building<br/>
+Below is one example of the `.env` file<br/>
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
+API_KEY=AIxxxaSxxxmzg73xxxxxx1dxxxxx4xxxxx-KGY
+AUTH_DOMAIN=websixxxxt-6xxxx18.firebaseapp.com
+DATABASE_URL=https://websixxct-xx18.firebaseio.com
+PROJECT_ID=websixxxeaxxb18
+STORAGE_BUCKET=website-react-xxxxx.appspot.com
+MESSAGING_SENDERID=819xxx49xx
+```
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+`API_KEY` refers to your firebase API key<br/>
+`AUTH_DOMAIN` refers to your firebase auth domain<br/>
+`DATABASE_URL` refers to your firebase database url<br/>
+`PROJECT_ID` refers to your project id with firebase<br/>
+`STORAGE_BUCKET` refers to your firebase storage bucket<br/>
+`MESSAGING_SENDERID` refers to your firebase messaging senderId<br/>
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+For npm user:
 
-### `npm run build`
+```sh
+$ npm install
+$ npm run start
+```
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For yarn user:
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+```sh
+$ yarn install
+$ yarn run start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Debug
 
-### `npm run eject`
+If your React/Node server fails to start with the following error message
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```sh
+events.js:167
+       throw er; // Unhandled 'error' event
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Please check your port `3000` and make sure there is no other app running on the same port
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Dependencies
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+LPWR uses a number of open source libraries to work properly.<br/>
+Below are all the key dependencies/technologies in this project.<br/>
+For all dependencies, please refer to `package.json`
 
-## Learn More
+| Dependency                          | Description                                                                                                   |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| [react]                             | A JavaScript library for building user interfaces. Serve as front-end.                                        |
+| [redux]                             | A predictable state container for JavaScript apps                                                             |
+| [redux-thunk]                       | Thunk middleware for Redux                                                                                    |
+| [bootstrap]                         | An open source toolkit for developing with HTML, CSS, and JS                                                  |
+| [firebase]                          | Firebase is Google's mobile platform that helps you quickly develop high-quality apps and grow your business. |
+| [moment]                            | Parse, validate, manipulate, and display dates and times in JavaScript                                        |
+| [react-typing-animation]            | A fully-featured typing animation in React that supports any valid JSX                                        |
+| [react-vertical-timeline-component] | Vertical timeline for React.js                                                                                |
+| [react-visibility-sensor]           | Sensor component for React that notifies you when it goes in or out of the window viewport                    |
+| [webpack]                           | A static module bundler for modern JavaScript applications                                                    |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+MIT
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+[//]: # "These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax"
+[react]: https://reactjs.org/
+[redux]: https://redux.js.org/
+[redux-thunk]: https://github.com/reduxjs/redux-thunk
+[bootstrap]: https://getbootstrap.com/
+[firebase]: https://firebase.google.com/
+[moment]: https://momentjs.com/
+[react-typing-animation]: https://www.npmjs.com/package/react-typing-animation/
+[react-vertical-timeline-component]: https://stephane-monnot.github.io/react-vertical-timeline/#/
+[react-visibility-sensor]: https://github.com/joshwnj/react-visibility-sensor
+[webpack]: https://webpack.js.org/
