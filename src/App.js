@@ -8,8 +8,15 @@ import Experience from "./components/Experience";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import { setSidebar } from "./actions/sidebarAction";
 import { connect } from "react-redux";
+
+import Sidebar_CH from "./ch_components/Sidebar_CH";
+import Index_CH from "./ch_components/Index_CH";
+import Profile_CH from "./ch_components/Profile_CH";
+import Experience_CH from "./ch_components/Experience_CH";
+import Skills_CH from "./ch_components/Skills_CH";
+import Projects_CH from "./ch_components/Projects_CH";
+import Contact_CH from "./ch_components/Contact_CH";
 
 import "bootstrap/scss/bootstrap.scss";
 import "./styles/style.scss";
@@ -23,13 +30,27 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <Sidebar />
-        <Index />
-        <Profile />
-        <Experience />
-        <Skills />
-        <Projects />
-        <Contact />
+        {this.props.language.language == "en" ? (
+          <div>
+            <Sidebar />
+            <Index />
+            <Profile />
+            <Experience />
+            <Skills />
+            <Projects />
+            <Contact />
+          </div>
+        ) : (
+          <div>
+            <Sidebar_CH />
+            <Index_CH />
+            <Profile_CH />
+            <Experience_CH />
+            <Skills_CH />
+            <Projects_CH />
+            <Contact_CH />
+          </div>
+        )}
         <footer className="text-center">
           Copyright © Lynch Zou 2019 | Contact: +1 (213)713-7527
         </footer>
@@ -38,4 +59,8 @@ class App extends Component {
   }
 }
 
-export default connect()(App);
+const mapStateToProps = state => ({
+  language: state.language
+});
+
+export default connect(mapStateToProps)(App);

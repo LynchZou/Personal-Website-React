@@ -8,4 +8,51 @@
   .logo {
     cursor: pointer;
   }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+
+    .dropbtn {
+      background: transparent;
+      color: black;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100px;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 100px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      text-align: center;
+      padding: 5px;
+
+      p {
+        color: black;
+        text-decoration: none;
+        display: block;
+        padding: 15px 0;
+        margin: 0;
+        cursor: pointer;
+
+        &:hover {
+          background-color: skyblue;
+        }
+      }
+    }
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover .dropbtn {
+    background-color: palevioletred;
+  }
 }
