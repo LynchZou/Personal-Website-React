@@ -54,6 +54,10 @@ class App extends Component {
           </div>
         )}
         <footer className="text-center">
+          <h2>
+            You are watching this footer right now, but I do not have anything
+            to say.
+          </h2>
           Copyright © Lynch Zou 2019 | Contact: +1 (213)713-7527
         </footer>
       </div>

@@ -147,6 +147,11 @@
 }
 
 @media (max-width: 420px) {
+  .experience {
+    background: url("../../src/images/bg-row-3.jpg") whitesmoke;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+  }
   .experience-title {
     font-size: 4rem !important;
   }

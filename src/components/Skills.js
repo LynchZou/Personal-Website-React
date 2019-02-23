@@ -66,6 +66,7 @@ export default class Skills extends React.Component {
             </div>
             <div
               className="process-container"
+              onClick={() => this.onSetBoard("js_board", true)}
               onMouseEnter={() => this.onSetBoard("js_board", true)}
             >
               <CircularProgressbar
@@ -107,6 +108,7 @@ export default class Skills extends React.Component {
             </div>
             <div
               className="process-container"
+              onClick={() => this.onSetBoard("cpp_board", true)}
               onMouseEnter={() => this.onSetBoard("cpp_board", true)}
             >
               <CircularProgressbar
@@ -148,6 +150,7 @@ export default class Skills extends React.Component {
             </div>
             <div
               className="process-container"
+              onClick={() => this.onSetBoard("html_board", true)}
               onMouseEnter={() => this.onSetBoard("html_board", true)}
             >
               <CircularProgressbar
@@ -189,6 +192,7 @@ export default class Skills extends React.Component {
             </div>
             <div
               className="process-container"
+              onClick={() => this.onSetBoard("css_board", true)}
               onMouseEnter={() => this.onSetBoard("css_board", true)}
             >
               <CircularProgressbar
@@ -232,6 +236,7 @@ export default class Skills extends React.Component {
             </div>
             <div
               className="process-container"
+              onClick={() => this.onSetBoard("doc_board", true)}
               onMouseEnter={() => this.onSetBoard("doc_board", true)}
             >
               <CircularProgressbar
@@ -273,6 +278,7 @@ export default class Skills extends React.Component {
             </div>
             <div
               className="process-container"
+              onClick={() => this.onSetBoard("team_board", true)}
               onMouseEnter={() => this.onSetBoard("team_board", true)}
             >
               <CircularProgressbar
@@ -314,6 +320,7 @@ export default class Skills extends React.Component {
             </div>
             <div
               className="process-container"
+              onClick={() => this.onSetBoard("python_board", true)}
               onMouseEnter={() => this.onSetBoard("python_board", true)}
             >
               <CircularProgressbar
@@ -354,6 +361,7 @@ export default class Skills extends React.Component {
             </div>
             <div
               className="process-container"
+              onClick={() => this.onSetBoard("php_board", true)}
               onMouseEnter={() => this.onSetBoard("php_board", true)}
             >
               <CircularProgressbar
@@ -397,6 +405,7 @@ export default class Skills extends React.Component {
             </div>
             <div
               className="process-container"
+              onClick={() => this.onSetBoard("mongo_board", true)}
               onMouseEnter={() => this.onSetBoard("mongo_board", true)}
             >
               <CircularProgressbar
@@ -438,6 +447,7 @@ export default class Skills extends React.Component {
             </div>
             <div
               className="process-container"
+              onClick={() => this.onSetBoard("java_board", true)}
               onMouseEnter={() => this.onSetBoard("java_board", true)}
             >
               <CircularProgressbar
@@ -478,6 +488,7 @@ export default class Skills extends React.Component {
             </div>
             <div
               className="process-container"
+              onClick={() => this.onSetBoard("ios_board", true)}
               onMouseEnter={() => this.onSetBoard("ios_board", true)}
             >
               <CircularProgressbar
@@ -519,6 +530,7 @@ export default class Skills extends React.Component {
               </div>
               <div
                 className="process-container"
+                onClick={() => this.onSetBoard("mysql_board", true)}
                 onMouseEnter={() => this.onSetBoard("mysql_board", true)}
               >
                 <CircularProgressbar
