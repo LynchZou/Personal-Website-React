@@ -1,10 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Rajdhani");
-@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
-
 .experience {
   min-height: 100vh;
   padding-top: 10vh;
-  background: url("../../src/images/bg-5.jpg") whitesmoke;
+  background: url("../../src/images/bg-7.jpg") whitesmoke;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100vh;
@@ -17,7 +14,7 @@
   }
 
   h4 {
-    font-family: "Rajdhani", sans-serif;
+    font-family: "Rajdhani", "ZCOOL XiaoWei", serif;
     font-weight: bold;
 
     &:hover {
@@ -143,10 +140,18 @@
     background-size: 100% 100%;
     background-attachment: fixed;
   }
+
+  .subtitle {
+    font-size: 1rem !important;
+  }
 }
 
 @media (max-width: 420px) {
   .experience-title {
     font-size: 4rem !important;
+  }
+
+  .subtitle {
+    font-size: 1rem !important;
   }
 }

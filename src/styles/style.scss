@@ -1,3 +1,11 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css?family=Rajdhani");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script");
+@import url("https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei");
+
+/* Custom partials */
+@import "./partials/mixin";
 @import "./partials/navbar";
 @import "./partials/sidebar";
 @import "./partials/index";
@@ -19,4 +27,10 @@ footer {
   padding-top: 20vh;
   background: whitesmoke;
   padding-bottom: 20px;
+}
+
+.loader-container {
+  h2 {
+    font-family: "Dancing Script", cursive !important;
+  }
 }

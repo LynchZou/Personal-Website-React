@@ -82,6 +82,12 @@
 @media (max-width: 420px) {
   .sidebar {
     width: 60%;
+    .sidebar-container {
+      .link-container {
+        padding: 20px 0;
+        font-size: 1.2rem;
+      }
+    }
   }
   .sidebar-appear {
     transform: translate(0, 0);

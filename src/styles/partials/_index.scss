@@ -1,12 +1,93 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+@include keyframes(showText) {
+  0% {
+    opacity: 0;
+    transform: translate(0, -20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
 
 .index {
-  height: 93vh;
-  padding-top: 30vh;
-  background: url("../../src/images/bg-7.jpg") whitesmoke;
+  height: 100vh;
+  background: url("../../src/images/bg-7.png") whitesmoke;
   background-size: 100% 100%;
   background-attachment: fixed;
+  position: relative;
+
+  .index-box {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .index-name {
+      opacity: 0;
+      transform: translate(0, -20px);
+      font-family: "Dancing Script", cursive;
+      font-size: 8rem;
+      @include animation("showText 0.5s 0.5s ease-in-out forwards");
+    }
+
+    .index-intro {
+      opacity: 0;
+      transform: translate(0, -20px);
+      font-size: 2rem;
+      margin: 10px 0;
+      font-family: "Rajdhani", sans-serif;
+      font-weight: bold;
+      @include animation("showText 0.5s 1s ease-in-out forwards");
+    }
+
+    .index-intro-2 {
+      @extend .index-intro;
+      @include animation("showText 0.5s 1.5s ease-in-out forwards");
+    }
+
+    .arrow {
+      margin-top: 200px;
+      cursor: pointer;
+      padding: 0 auto;
+      margin-left: 50%;
+      span {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-bottom: 5px solid violet;
+        border-right: 5px solid violet;
+        transform: rotate(45deg);
+        margin: -10px;
+        animation: animate 2s infinite;
+
+        &:nth-child(2) {
+          animation-delay: -0.2s;
+        }
+
+        &:nth-child(3) {
+          animation-delay: -0.4s;
+        }
+      }
+    }
+  }
 }
 
 .intro {
@@ -47,12 +128,11 @@
 }
 
 @media (max-width: 420px) {
-  .intro {
-    .change-intro {
-      font-size: 2rem;
-    }
-    .sub-intro {
-      font-size: 1rem;
+  .index {
+    .index-box {
+      .index-name {
+        font-size: 5rem;
+      }
     }
   }
 }

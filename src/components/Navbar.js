@@ -10,7 +10,8 @@ class Navbar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      showSidebar: false
+      showSidebar: false,
+      display: "none"
     };
   }
 
@@ -39,10 +40,21 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar-container top">
-        <Headroom style={{ maxHeight: "65px" }}>
-          <nav className="navbar navbar-expand-lg navbar-transparent bg-light justify-content-between ">
+        <Headroom
+          style={{
+            maxHeight: "75px",
+            display: this.state.display,
+            background: "transparent"
+          }}
+          onPin={() => this.setState({ display: "block" })}
+        >
+          <nav className="navbar navbar-expand-lg transparent navbar-inverse justify-content-between ">
             <div className="logo" onClick={this.onClickLogo}>
-              <img src={logo} className="ml-5" style={{ width: "50px" }} />
+              <img
+                src={logo}
+                className="ml-5 nav-logo"
+                style={{ width: "50px" }}
+              />
               Lynch
             </div>
             <div className="nav-right">
@@ -61,7 +73,7 @@ class Navbar extends React.Component {
                 </div>
               </div>
               <i
-                className="fas fa-bars mr-5"
+                className="fas fa-bars mr-5 sidebar-icon"
                 onClick={this.onClickBar}
                 ref={node => (this.node = node)}
               />

@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Rajdhani");
-
 .profile {
-  background: whitesmoke;
+  background: url("../../src/images/bg-7.png"), white;
+  background-size: 100% 100%;
   padding-top: 15vh;
   min-height: 100vh;
 
@@ -39,9 +38,11 @@
 
 @media (max-width: 1024px) {
   .profile {
+    background: white;
     .profile-content {
       .profile-text {
         font-size: 1.5rem;
+        width: 100%;
       }
     }
   }
@@ -54,8 +55,12 @@
   }
 
   .profile {
+    background: white;
+    padding-bottom: 40px;
+
     .profile-content {
       .profile-text {
+        font-size: 1rem;
         width: 100%;
       }
 

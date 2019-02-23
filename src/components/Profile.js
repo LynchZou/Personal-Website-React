@@ -1,5 +1,4 @@
 import React from "react";
-import profile_img from "../images/profile_psed.jpg";
 
 export default class Profile extends React.Component {
   render() {
@@ -44,9 +43,6 @@ export default class Profile extends React.Component {
             >
               GO FOR YOU FUTURE, LYNCH!
             </p>
-          </div>
-          <div className="profile-img">
-            <img src={profile_img} alt="profile image" />
           </div>
         </div>
       </div>

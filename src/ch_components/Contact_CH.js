@@ -42,7 +42,7 @@ class Contact_CH extends React.Component {
   onChangeText = e => {
     if (!validator.isLength(e.target.value, 10, [500])) {
       this.setState(prevState => {
-        prevState.errors.text = "Comment must be between 10 and 500 characters";
+        prevState.errors.text = "评论必须在10到500个字之间！";
         return prevState;
       });
     } else {
@@ -119,7 +119,7 @@ class Contact_CH extends React.Component {
             />
             <input
               type="text"
-              name="username"
+              name="用户名"
               className="form-username ml-3"
               placeholder="Username"
               onChange={this.onChangeUsername}
@@ -140,7 +140,7 @@ class Contact_CH extends React.Component {
             <hr style={{ marginLeft: "0", width: "40%", marginTop: "30px" }} />
             <textarea
               className="form-control form-text mt-2"
-              placeholder="Leave any comment here!"
+              placeholder="发表你的评论!"
               name="content"
               rows="10"
               onChange={this.onChangeText}

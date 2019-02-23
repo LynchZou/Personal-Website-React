@@ -35,9 +35,6 @@ export default class Profile_CH extends React.Component {
               Fight On！Lynch！
             </p>
           </div>
-          <div className="profile-img">
-            <img src={profile_img} alt="profile image" />
-          </div>
         </div>
       </div>
     );

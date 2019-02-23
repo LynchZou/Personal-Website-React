@@ -18,6 +18,8 @@ import Skills_CH from "./ch_components/Skills_CH";
 import Projects_CH from "./ch_components/Projects_CH";
 import Contact_CH from "./ch_components/Contact_CH";
 
+// import "bootstrap-material-design/dist/css/bootstrap-material-design.css";
+// import "bootstrap-material-design/dist/js/bootstrap-material-design.js.map";
 import "bootstrap/scss/bootstrap.scss";
 import "./styles/style.scss";
 
