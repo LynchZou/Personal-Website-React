@@ -152,7 +152,9 @@ export default class Index_CH extends React.Component {
     return (
       <div className="index" id="three-container">
         <div className="index-box text-center">
-          <div className="index-name">LYNCH</div>
+          <div>
+            <h1 className="index-name">LYNCH</h1>
+          </div>
           <div className="index-intro">Web开发者</div>
           <div class="arrow index-intro-2" onClick={this.onGotoProfile}>
             <span />
