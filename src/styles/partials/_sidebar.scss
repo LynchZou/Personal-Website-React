@@ -81,6 +81,7 @@
 
 @media (max-width: 420px) {
   .sidebar {
+    z-index: 3000;
     width: 60%;
     .sidebar-container {
       .link-container {
